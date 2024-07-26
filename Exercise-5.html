@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Flex</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        margin: 100px auto;
+        height: 80vh;
+        width: 80vw;
+        background: linear-gradient(midnightblue, black);
+        border-radius: 5px;
+        display: flex;
+        flex-wrap: wrap;
+
+        /* This is flex direction  */
+
+        /* flex-direction: row; */
+        flex-direction: column;
+        /* flex-direction: column-reverse; */
+        /* flex-direction: row-reverse; */
+
+        /* This is justify content property  */
+
+        /* justify-content: flex-start; */
+        /* justify-content: flex-end; */
+        justify-content: center;
+        /* justify-content: space-around; */
+        /* justify-content: space-between; */
+        /* justify-content: space-evenly; */
+
+        /* This is aligin items property  */
+
+        /* align-items: flex-start; */
+        /* align-items: flex-end; */
+        align-items: center;
+        /* align-items: stretch; */
+        /* align-items: baseline; */
+
+        /* This is  property of algin content  */
+
+        /* align-content: flex-start; */
+        /* align-content: flex-end; */
+        /* align-content: space-around; */
+        /* align-content: space-between; */
+        /* align-content: space-evenly; */
+        /* align-content: stretch; */
+        align-content: center;
+      }
+
+      .items {
+        height: 70px;
+        width: 70px;
+        border: 1px solid black;
+        background-color: crimson;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+      }
+
+      .one {
+        order: 0;
+        flex-grow: 0;
+        flex-shrink: 1;
+      }
+      .tow {
+        order: 3;
+        flex-grow: 0;
+        flex-shrink: 1;
+      }
+      .three {
+        order: 3;
+        flex-grow: 0;
+        flex-shrink: 1;
+      }
+      .four {
+        order: 0;
+        flex-grow: 0;
+        flex-shrink: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="items one">1</div>
+      <div class="items tow">2</div>
+      <div class="items three">3</div>
+      <div class="items four">4</div>
+      <div class="items one">5</div>
+      <div class="items tow">6</div>
+      <div class="items three">7</div>
+      <div class="items four">8</div>
+      <div class="items one">9</div>
+      <div class="items tow">10</div>
+      <div class="items three">11</div>
+      <div class="items four">12</div>
+      <div class="items three">13</div>
+      <div class="items four">14</div>
+    </div>
+  </body>
+</html>

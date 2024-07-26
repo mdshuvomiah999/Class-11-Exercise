@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Asap:ital,wght@0,100..900;1,100..900&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Exo:ital,wght@0,100..900;1,100..900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Hind:wght@300;400;500;600;700&family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Play:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Exo", sans-serif;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  background-color: azure;
+  box-shadow: 8px 8px 20px rgb(207, 214, 221);
+  /* flex-wrap: wrap; */
+  /* display: flex; */
+  /* justify-content: center;
+  align-items: center; */
+  /* flex-wrap: wrap; */
+}
+
+.box-container .text {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 20px;
+  text-decoration: underline;
+  color: crimson;
+}
+
+.box {
+  height: 200px;
+  width: 300px;
+  background-color: white;
+
+  box-shadow: 8px 8px 20px rgb(211, 216, 220);
+  margin: 10px;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: space-evenly;
+  /* flex-direction: column; */
+  border-radius: 2px;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.box:hover {
+  transform: skew(5deg);
+}
+.box h1 {
+  font-size: 1rem;
+  /* text-align: center; */
+}
+.box-div {
+  margin-top: 20px;
+  /* padding: 10px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}

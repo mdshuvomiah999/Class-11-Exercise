@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image flex Box</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+      }
+
+      body {
+        background-color: azure;
+      }
+      .container {
+      }
+      .image {
+        margin-top: 20px;
+      }
+      .logo {
+        height: 10vh;
+        background-color: #444;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .logo h1 {
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 600;
+        font-size: 2em;
+        display: in;
+      }
+      /* .image {
+        display: flex;
+        align-items: center;
+      } */
+
+      ul {
+        padding: 10px;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+      ul li {
+        height: 300px;
+        width: 300px;
+        margin: 5px;
+        /* margin: 5px; */
+        overflow: hidden;
+      }
+      img {
+        border-radius: 5px;
+        max-height: 100%;
+        min-width: 100%;
+        object-fit: cover;
+        cursor: pointer;
+        transition: all 0.5s;
+      }
+      img:hover {
+        transform: scale(1.1);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">
+        <h1>This is FlexBox Gallery</h1>
+      </div>
+      <div class="image">
+        <ul>
+          <li><img src="/Images/image-1.jpg" alt="bridge" /></li>
+          <li><img src="/Images/image-10.jpg" alt="bridge" /></li>
+          <li><img src="/Images/image-12.jpg" alt="bridge" /></li>
+          s
+          <li><img src="/Images/image-2.jpg" alt="bridge" /></li>
+          s
+          <li><img src="/Images/image-3.jpg" alt="bridge" /></li>
+          s
+          <li><img src="/Images/image-4.jpg" alt="bridge" /></li>
+          s
+          <li><img src="/Images/image-5.jpg" alt="bridge" /></li>
+          s
+          <li><img src="/Images/image-6.jpg" alt="bridge" /></li>
+          s
+          <li><img src="/Images/image-7.jpg" alt="bridge" /></li>
+          s
+          <li><img src="/Images/image-8.jpg" alt="bridge" /></li>
+          <li><img src="/Images/image-9.jpg" alt="bridge" /></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 1</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        width: 700px;
+        height: 50vh;
+        background-color: midnightblue;
+        margin: 100px auto;
+        border-radius: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+      .items {
+        width: 100px;
+        height: 100px;
+        background-color: crimson;
+        border: 2px solid midnightblue;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2em;
+        color: whitesmoke;
+        font-weight: bold;
+      }
+
+      .one {
+        order: 4;
+        flex-grow: 1;
+      }
+      .two {
+        order: 3;
+        flex-grow: 1;
+      }
+
+      .three {
+        order: 5;
+        flex-grow: 3;
+      }
+      .four {
+        order: 6;
+        flex-grow: 4;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="items one">1</div>
+      <div class="items two">2</div>
+      <div class="items three">3</div>
+      <div class="items four">4</div>
+    </div>
+  </body>
+</html>
